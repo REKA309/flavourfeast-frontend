@@ -1,0 +1,152 @@
+body{
+  width: 100%;
+  height: 100vh;
+  background-color:rgb(184, 213, 213);
+}
+.App
+{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.nabar
+{
+  width: 100%;
+  height: 15vh;
+  background-color: #333;
+  opacity: 0.9;
+  backdrop-filter: blur(7px);
+}
+.routeComponent
+{
+  width: 100%;
+  height: 85vh;
+}
+/* css animation  */
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+.homechild-container
+{
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+background-color: rgb(184, 213, 213);
+ padding: 17px;
+ box-sizing: border-box;
+}
+.black-lives-matter {
+  font-size: 8vw;
+  line-height: 8vw;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  background: url(https://mintandbasil.hk/wp-content/uploads/2020/10/Eat-the-Best-Indian-Cuisine-in-hong-kong.jpg);
+  background-size: 40%;
+  background-position: 50% 50%;
+ background-clip: text;
+  color: rgba(0,0,0,0.08);
+  animation: zoomout 10s ease 500ms forwards infinite;
+}
+@media (max-width: 600px) {
+  .black-lives-matter{
+    font-size: 15vw;
+    font-weight: 100px;
+    line-height: 15vw;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 10%;
+  }
+}
+.h1text
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black
+}
+.transparent-bar{
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  
+}
+.transparent-bar >.bar{
+ 
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: transparent;
+}
+.circular-image {
+ 
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire circle */
+}
+/* explore styling */
+.explore-container
+{
+  display: flex;
+  overflow-y: scroll;
+  width: 100%;
+  height: 85vh;
+  padding: 15px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.explore-content
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.explore-btn
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.demobtn
+{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.card {
+  width: calc(25% - 20px); /* 3 cards per row with 20px gap */
+  margin: 10px;
+  border: 1.3px solid #e465d8;
+  cursor: pointer;
+  padding: 10px;
+  box-sizing: border-box;
+ display: flex;
+ justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.card:hover {
+  margin-top: -.25rem;
+  margin-bottom: .25rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(249, 245, 245, 0.849);
+}
+@media(max-width:600px)
+{
+  .card{width: 100%;}
+}
+.search-bar
+{
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
